@@ -1,0 +1,117 @@
+package Information;
+
+
+public class Pessoa {
+	String NomeC;
+    String End;
+    String cpf;
+    String rg;
+    String tel;
+    String cel;
+    String ddd, ddd2;
+    String email;
+    String cep;
+    String nasc;
+    String est;
+    String cid;
+    String com;
+    String Bai;
+    String Num;
+	public String getNomeC() {
+		return NomeC;
+	}
+	public void setNomeC(String nomeC) {
+		NomeC = nomeC;
+	}
+	public String getEnd() {
+		return End;
+	}
+	public void setEnd(String end) {
+		End = end;
+	}
+	public String getCpf() {
+		return cpf;
+	}
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+	public String getRg() {
+		return rg;
+	}
+	public void setRg(String rg) {
+		this.rg = rg;
+	}
+	public String getTel() {
+		return tel;
+	}
+	public void setTel(String tel) {
+		this.tel = tel;
+	}
+	public String getCel() {
+		return cel;
+	}
+	public void setCel(String cel) {
+		this.cel = cel;
+	}
+	public String getDdd() {
+		return ddd;
+	}
+	public void setDdd(String ddd) {
+		this.ddd = ddd;
+	}
+	public String getDdd2() {
+		return ddd2;
+	}
+	public void setDdd2(String ddd2) {
+		this.ddd2 = ddd2;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getCep() {
+		return cep;
+	}
+	public void setCep(String cep) {
+		this.cep = cep;
+	}
+	public String getNasc() {
+		return nasc;
+	}
+	public void setNasc(String nasc) {
+		this.nasc = nasc;
+	}
+	public String getEst() {
+		return est;
+	}
+	public void setEst(String est) {
+		this.est = est;
+	}
+	public String getCid() {
+		return cid;
+	}
+	public void setCid(String cid) {
+		this.cid = cid;
+	}
+	public String getCom() {
+		return com;
+	}
+	public void setCom(String com) {
+		this.com = com;
+	}
+	public String getBai() {
+		return Bai;
+	}
+	public void setBai(String bai) {
+		Bai = bai;
+	}
+	public String getNum() {
+		return Num;
+	}
+	public void setNum(String num) {
+		Num = num;
+	}}
+	
+   
