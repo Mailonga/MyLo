@@ -1,1 +1,46 @@
+package Information;
 
+import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+
+public class Tab extends JFrame{
+
+	String [] c = new String[] {"Nome", "E-mail","Endereço", "Número", "Bairro", "CEP", "Complemento", "Cidade", 
+			                    "Estado", "Telefone", "Celular", "RG", "CPF", "Nascimento"}; 
+	String [][] l = new String [][] {};
+	
+	JTable tab = new JTable();
+	DefaultTableModel m = new DefaultTableModel(l, c);
+	
+	public Tab() {
+		super("Cadastrados");
+		
+		tab.setModel(m);
+		JScrollPane s = new JScrollPane();
+		s.setViewportView(tab);
+		this.add(s);
+		
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setSize(1500, 390);
+		setLocationRelativeTo(null);
+	}
+	
+	public static void main(String[] args) {
+		new Tab();
+	}
+
+	public void Linha(String nomeC, String email, String end, String num, String bai, String cep, String com,
+			String cid, String est, String tel, String cel, String rg, String cpf,
+			String nasc) {
+		String[] lin = new String[]{nomeC, email, end, num, bai, cep, com, cid, est, tel, cel, rg, cpf, nasc};
+		m.addRow(lin);
+		
+		
+	}
+	
+
+	
+
+}
