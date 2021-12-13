@@ -1,1 +1,305 @@
+package Information;
+
+
+import javax.swing.JButton;
+import javax.swing.JFormattedTextField;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.text.MaskFormatter;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.ParseException;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Container;
+
+import Information.Pessoa;
+import Information.Tab;
+
+public class Registro extends JFrame implements ActionListener{
+	
+	private Pessoa p;
+	private Tab tab;
+	
+	JLabel lbNomeC;
+	JTextField tfNomeC;
+	JLabel lbEnd;
+	JTextField tfEnd;
+	JLabel lbNum;
+	JTextField tfNum;
+	JLabel lbBai;
+	JTextField tfBai;
+	JLabel lbddd;
+	JTextField tfddd;
+	JLabel lbcel;
+	JTextField tfcel;
+	JLabel lbddd2;
+	JTextField tfddd2;
+	JLabel lbTel;
+	JTextField tfTel;
+	JLabel lbcom;
+	JTextField tfcom;
+	JLabel lbcid;
+	JTextField tfcid;
+	JLabel lbest;
+	JTextField tfest;
+    JLabel lbemail;
+	JTextField tfemail;
+	JLabel lbcep;
+	JFormattedTextField tfcep;
+	JLabel lbrg;
+	JFormattedTextField tfrg;
+	JLabel lbcpf;
+	JFormattedTextField tfcpf;
+	JLabel lbnasc;
+	JFormattedTextField tfnasc;
+	JButton btcad;
+	JButton btlimp;
+	JButton btlist;
+	JButton btsair;
+
+	
+	public Registro () throws ParseException {
+		super("Home");
+		this.p = new Pessoa();
+		this.tab = new Tab();
+		// CRIANDO CONTAINER E ADICIONANDO UM LAYOUT A NOSSA JANELA
+				Container c = getContentPane();
+				c.setLayout(null);
+				c.setBackground(Color.lightGray);
+
+				// CRIANDO OS COMPONENTES
+				lbNomeC = new JLabel("Nome Completo : ");
+				lbNomeC.setBounds(20, 20, 100, 20);
+				tfNomeC = new JTextField("");
+				tfNomeC.setBounds(120, 20, 300, 20);
+				lbemail = new JLabel("E-mail : ");
+				lbemail.setBounds(430, 20, 60, 20);
+				tfemail = new JTextField("");
+				tfemail.setBounds(480, 20, 300, 20);
+				
+				lbEnd = new JLabel("Endereço : ");
+				lbEnd.setBounds(20, 60, 100, 20);
+				tfEnd = new JTextField("");
+				tfEnd.setBounds(85, 60, 270, 20);
+				lbNum = new JLabel("Nº : ");
+				lbNum.setBounds(360, 60, 200, 20);
+				tfNum = new JTextField("");
+				tfNum.setBounds(390, 60, 30, 20);
+			    lbBai = new JLabel("Bairro : ");
+			    lbBai.setBounds(430,60,200, 20);
+			    tfBai = new JTextField("");
+			    tfBai.setBounds(480,60,110,20);
+			    lbcep = new JLabel("CEP : ");
+			    lbcep.setBounds(600, 60, 40, 20);
+			   
+			    tfcep = new JFormattedTextField("");
+			    MaskFormatter cep = new MaskFormatter("##.###-###");
+			    cep.setPlaceholderCharacter('_');
+			    JFormattedTextField tfcep = new JFormattedTextField(cep);
+			    tfcep.setBounds(640, 60, 90, 20);
+			    
+			    lbcom = new JLabel("Complemento : ");
+			    lbcom.setBounds(20, 100, 90, 20);
+			    tfcom = new JTextField("");
+			    tfcom.setBounds(110, 100, 245, 20);
+			    lbcid = new JLabel("Cidade : ");
+			    lbcid.setBounds (360, 100, 90, 20);
+			    tfcid = new JTextField("");
+		        tfcid.setBounds(415, 100, 120, 20);
+		        lbest = new JLabel("Estado : ");
+		        lbest.setBounds(560, 100, 90, 20);
+		        tfest = new JTextField("");
+		        tfest.setBounds(620, 100, 150, 20);
+			    
+			    lbTel = new JLabel("Telefone : ");
+			    lbTel.setBounds(120, 140, 60, 20);
+			    tfTel = new JFormattedTextField("");
+			    MaskFormatter tel = new MaskFormatter("## ####-####");
+			    tel.setPlaceholderCharacter('_');
+			    JFormattedTextField tfTel = new JFormattedTextField(tel);
+			    tfTel.setBounds(180, 140, 110, 20);
+			    
+			    lbcel = new JLabel("Celular : ");
+			    lbcel.setBounds(400, 140, 60, 20);
+			    tfcel = new JFormattedTextField("");
+			    MaskFormatter cel = new MaskFormatter("## # ####-####");
+			    cel.setPlaceholderCharacter('_');
+			    JFormattedTextField tfcel = new JFormattedTextField(cel);
+			    tfcel.setBounds(450, 140, 140, 20);
+			    
+			    
+			    lbrg = new JLabel("RG : ");
+			    lbrg.setBounds(20, 180, 40, 20);
+			    tfrg = new JFormattedTextField ("");
+			    MaskFormatter rg = new MaskFormatter("#.###.###");
+			    rg.setPlaceholderCharacter('_');
+			    JFormattedTextField tfrg = new JFormattedTextField(rg);
+			    tfrg.setBounds(50, 180, 90, 20);
+			    
+			    
+			    lbcpf = new JLabel("C.P.F. : ");
+			    lbcpf.setBounds(150, 180, 60, 20);
+			    tfcpf = new JFormattedTextField("");
+			    MaskFormatter cpf = new MaskFormatter("###.###.###-##");
+			    cpf.setPlaceholderCharacter('_');
+			    JFormattedTextField tfcpf = new JFormattedTextField(cpf);
+			    tfcpf.setBounds(190, 180, 120, 20);
+			    
+			    
+			    lbnasc = new JLabel("Data de Nacimento : ");
+			    lbnasc.setBounds(340, 180, 120, 20);
+			    tfnasc = new JFormattedTextField("");
+			    MaskFormatter nasc = new MaskFormatter("##/##/####");
+			    nasc.setPlaceholderCharacter('_');
+			    JFormattedTextField tfnasc = new JFormattedTextField(nasc);
+			    tfnasc.setBounds(460, 180, 120, 20);
+			    
+			    btcad = new JButton("Cadastrar");
+			    btcad.addActionListener(this);
+			    c.add(btcad = new JButton("Cadastrar"));
+			    btcad.setBounds(200, 260, 100, 60);
+			    btcad.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						cad();
+					}});
+			    
+			    btlimp = new JButton("Limpar");
+			    btlimp.addActionListener(this);
+			    c.add(btlimp = new JButton("Limpar"));
+			    btlimp.setBounds(330, 260, 100, 60);
+			    btlimp.addActionListener((ActionListener) new ActionListener() {
+			    	 public void actionPerformed(ActionEvent e) {
+							tfNomeC.setText(null);
+							tfemail.setText(null);
+							tfEnd.setText(null);
+							tfNum.setText(null);
+							tfBai.setText(null);
+							tfcep.setText(null);
+							tfcom.setText(null);
+							tfcid.setText(null);
+							tfest.setText(null);
+							tfTel.setText(null);
+							tfcel.setText(null);
+							tfrg.setText(null);
+							tfcpf.setText(null);
+							tfnasc.setText(null);
+							
+					    };
+			    });
+			    
+			    btlist = new JButton("Listar");
+			    btlist.addActionListener(this);
+			    c.add(btlist = new JButton("Listar"));
+			    btlist.setBounds(460, 260, 100, 60);
+			    btlist.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						tab.setVisible(true);	
+					}});
+			    
+			    btsair = new JButton("Sair");
+			    btsair.addActionListener(this);
+			    c.add(btsair = new JButton("Sair"));
+			    btsair.setBounds(590, 260, 100, 60);
+			    btsair.addActionListener(new ActionListener() {
+					
+					@Override
+					public void actionPerformed(ActionEvent arg0) {
+						dispose();
+						tab.dispose();
+					}
+				});
+
+				// ADICIONANDO OS COMPONENTES A JANELA
+				c.add(lbNomeC);
+				c.add(tfNomeC);
+				c.add(lbemail);
+				c.add(tfemail);
+				c.add(lbEnd);
+				c.add(tfEnd);
+				c.add(lbNum);
+				c.add(tfNum);
+				c.add(lbBai);
+				c.add(tfBai);
+				c.add(lbcep);
+				c.add(tfcep);
+				c.add(lbcid);
+	            c.add(tfcid);
+	            c.add(lbest);
+	            c.add(tfest);
+                c.add(lbTel);
+                c.add(tfTel);
+                c.add(lbcom);
+                c.add(tfcom);
+                c.add(lbcel);
+                c.add(tfcel);
+                c.add(lbrg);
+                c.add(tfrg);
+                c.add(lbcpf);
+                c.add(tfcpf);
+                c.add(lbnasc);
+                c.add(tfnasc);
+                
+				
+				// ADICIONANDO EVENTO AOS COMPONENTES
+				
+				// MONTAGEM DA JANELA(fun��o do X, tamanho, posi��o no monitor, visibilidade*)
+				setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				setSize(900, 500);
+				setLocationRelativeTo(null);
+				setResizable(false);
+				setVisible(true);
+			}
+	
+	public static void main(String[] args) throws ParseException {
+		new Registro();
+
+	}
+	
+	public void cad() {
+		p.setNomeC(tfNomeC.getText());
+		p.setEmail(tfemail.getText());
+		p.setEnd(tfEnd.getText());
+		p.setNum(tfNum.getText());
+		p.setBai(tfBai.getText());
+		p.setCep(tfcep.getText());
+		p.setCom(tfcom.getText());
+		p.setCid(tfcid.getText());
+		p.setEst(tfest.getText());;
+		p.setTel(tfTel.getText());;
+		p.setCel(tfcel.getText());;
+		p.setRg(tfrg.getText());;
+		p.setCpf(tfcpf.getText());;
+		p.setNasc(tfnasc.getText());;
+		JOptionPane.showMessageDialog(null, "Cadastrado Com Sucesso!");
+		
+		tab.Linha(
+				p.getNomeC(),
+				p.getEmail(),
+				p.getEnd(),
+				p.getNum(),
+				p.getBai(),
+				p.getCep(),
+				p.getCom(),
+				p.getCid(),
+				p.getEst(),
+				p.getTel(),
+				p.getCel(),
+				p.getRg(),
+				p.getCpf(),
+				p.getNasc()
+				);
+	}    	
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	}
+	
 
