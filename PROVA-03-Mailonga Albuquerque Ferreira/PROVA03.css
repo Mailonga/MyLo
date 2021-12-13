@@ -1,0 +1,8 @@
+body{
+  background-image: url('backimage.jpg');
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+  align-items: center;
+  margin-top: 80px;
+}
