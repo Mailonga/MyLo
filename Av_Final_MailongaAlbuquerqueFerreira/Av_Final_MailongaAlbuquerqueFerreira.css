@@ -1,0 +1,16 @@
+body{
+    font-family: Verdana, Tahoma, sans-serif;
+    background-image: url(../Av_Final_MailongaAlbuquerqueFerreira/BB.webp);
+    color: ivory;
+}
+
+.navbar{
+      margin: 25px;
+      
+}
+
+.container{
+    margin: auto;
+    padding: 25px;
+}
+
