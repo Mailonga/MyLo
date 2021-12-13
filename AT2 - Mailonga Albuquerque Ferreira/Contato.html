@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Contato</title>
+
+    <style>
+      h1{
+        margin: 50px;
+      }
+      body{
+      background-color: rgb(245, 217, 245);
+    }
+    .container{
+      background-color: white;
+      margin-bottom: 25px;
+    }
+    
+    </style>
+
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark" style = "background-color: purple;">
+        <a class="navbar-brand" href="#"> DramaOn!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="Index.html"> Home <span class="sr-only">(Página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Destaques.html">Destaques</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="Dramas.html">Dramas</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="Contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <h1> Envie a Sua Sugestão</h1>
+       
+        <div class="container">
+          <form>
+            <div class="form-row">
+              <div class="col">
+                <label for="assunto">Assunto:</label>
+                 <input type="text" class="form-control" id="assunto" name="assunto" placeholder="Informe seu Assunto" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" placeholder="Nome">
+              </div>
+              <div class="col">
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Sugestão</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-row align-items-center">
+              <div class="col-sm-3 my-1">
+                <label class="sr-only" for="inlineFormInputName">Nome</label>
+                <input type="text" class="form-control" id="inlineFormInputName" placeholder="Apelido">
+              </div>
+              <div class="col-sm-3 my-1">
+                <label class="sr-only" for="inlineFormInputGroupUsername">Usuário</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">@</div>
+                  </div>
+                  <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Usuário">
+                </div>
+              </div>
+              <div class="col-auto my-1">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                  <label class="form-check-label" for="autoSizingCheck2">
+                    Lembrar de mim
+                  </label>
+                </div>
+              </div>
+              <div class="col-auto my-1">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </div>
+          </form>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15801.798960678234!2d-34.8790754643845!3d-8.055522261168765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18a2a565885f%3A0x802b0e52579b84b7!2sRecife%2C%20PE%2C%2050030-230!5e0!3m2!1spt-BR!2sbr!4v1631902247351!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+       
+          
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

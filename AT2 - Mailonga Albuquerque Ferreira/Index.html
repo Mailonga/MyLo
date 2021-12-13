@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+    .container{
+      margin-top: 35px;
+      margin-bottom: 35px;
+      float: left;
+      margin-left: 100px;
+    }
+    .container2{
+      float: right;
+      margin-right: 100px;
+      margin-top: 50px;
+    }
+    body{
+      background-color: rgb(245, 217, 245);
+    }
+    .card{
+      border: rgb(121, 106, 133) 5px;
+      border-style: double;
+      margin: 25px;
+    }
+    .row{
+      margin: 50px;
+    }
+    </style>
+
+
+    <title>Home</title>
+
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark" style = "background-color: purple;">
+        <a class="navbar-brand" href="#"> DramaOn!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="Index.html"> Home <span class="sr-only">(Página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Destaques.html">Destaques</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Dramas.html">Dramas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+        <div id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Entrar ou Cadastrar</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <div class="container">
+        <div class="card bg-dark text-dark">
+          <img class="card-img" src="../AT2 - Mailonga Albuquerque Ferreira/IMAGENS/Jumbotron4-FC.jpg" alt="Imagem do card">
+          <div class="card-img-overlay">
+            <h5 class="card-title"> <strong> Five Enough </strong> </h5>
+            <p class="card-text">Uma História de amor entre um homem viúvo, com dois filhos e uma mulher divórciada com três filhos na Korea do Sul. Como 
+              eles escolhem se abrir para o amor e formarem uma família.
+            </p>
+            <p class="card-text">Completo</p>
+          </div>
+        </div>
+        <div class="card bg-dark text-dark">
+          <img class="card-img" src="../AT2 - Mailonga Albuquerque Ferreira/IMAGENS/Jumbotron2-LO2O.jpg" alt="Imagem do card">
+          <div class="card-img-overlay">
+            <h5 class="card-title"> <strong> Love O2O </strong></h5>
+            <p class="card-text">Um encontro acidental em numa Lan House em Beijing, faz com que o, Melhor Estudante da Faculdade de Ciência da Computação, Xiao Nai apaixone-se 
+              pela graduanda em Ciência da Computação e, escolhida como Bela da Faculdade de CC, Bei Wei Wei.</p>
+            <p class="card-text">Em Andamento</p>
+         </div>
+        </div>
+        <div class="card bg-dark text-dark">
+           <img class="card-img" src="../AT2 - Mailonga Albuquerque Ferreira/IMAGENS/Jumbotron6-LBC.jpeg" alt="Imagem do card">
+           <div class="card-img-overlay">
+               <h5 class="card-title"> <strong> Love By Chance </strong> </h5>
+               <p class="card-text">Um Acidante promove o primeiro encontro entre Ae e Pete na Universidade na Thailândia e os 
+                 sentimentos diferentes derivados desse acidente promovem o florecer do amor entre os dois.</p>
+               <p class="card-text">Completo</p>
+            </div>
+        </div>
+        <div class="card bg-dark text-white">
+          <img class="card-img" src="../AT2 - Mailonga Albuquerque Ferreira/IMAGENS/Jumbotron9-TKEM.jpg" alt="Imagem do card">
+          <div class="card-img-overlay">
+            <h5 class="card-title"> <strong> The King: Eternal Monarch </strong> </h5>
+            <p class="card-text">Um Rei e Uma Polícial determinam o futuro de dois mundos paralelos e o futuro das suas próprias vidas.</p>
+            <p class="card-text">Em Andamento</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="../AT2 - Mailonga Albuquerque Ferreira/IMAGENS/Doramas.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">DramaOn!</h5>
+            <p class="card-text">O Melhor Site de K-Dramas, C-Dramas e T-Dramas.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Usuário</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail ou Nome do Usuário">
+                  <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Senha</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Lembre-se de Min</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Entrar</button>
+              </form>
+            </li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Cadastre-se</a>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
