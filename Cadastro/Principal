@@ -97,10 +97,9 @@ public class Registro extends JFrame implements ActionListener{
 			    lbcep = new JLabel("CEP : ");
 			    lbcep.setBounds(600, 60, 40, 20);
 			   
-			    tfcep = new JFormattedTextField("");
-			    MaskFormatter cep = new MaskFormatter("##.###-###");
-			    cep.setPlaceholderCharacter('_');
-			    JFormattedTextField tfcep = new JFormattedTextField(cep);
+			    MaskFormatter cep = null;
+			    cep = new MaskFormatter("#####-###");
+			    tfcep = new JFormattedTextField(cep);
 			    tfcep.setBounds(640, 60, 90, 20);
 			    
 			    lbcom = new JLabel("Complemento : ");
@@ -118,45 +117,40 @@ public class Registro extends JFrame implements ActionListener{
 			    
 			    lbTel = new JLabel("Telefone : ");
 			    lbTel.setBounds(120, 140, 60, 20);
-			    tfTel = new JFormattedTextField("");
-			    MaskFormatter tel = new MaskFormatter("## ####-####");
-			    tel.setPlaceholderCharacter('_');
-			    JFormattedTextField tfTel = new JFormattedTextField(tel);
+			    MaskFormatter Tel =null;
+			    Tel = new MaskFormatter("## # ####-####");
+			    tfTel = new JFormattedTextField(Tel);
 			    tfTel.setBounds(180, 140, 110, 20);
 			    
 			    lbcel = new JLabel("Celular : ");
 			    lbcel.setBounds(400, 140, 60, 20);
-			    tfcel = new JFormattedTextField("");
-			    MaskFormatter cel = new MaskFormatter("## # ####-####");
-			    cel.setPlaceholderCharacter('_');
-			    JFormattedTextField tfcel = new JFormattedTextField(cel);
+			    MaskFormatter cel = null;
+			    cel = new MaskFormatter("## # ####-####");
+			    tfcel = new JFormattedTextField(cel);
 			    tfcel.setBounds(450, 140, 140, 20);
 			    
 			    
 			    lbrg = new JLabel("RG : ");
 			    lbrg.setBounds(20, 180, 40, 20);
-			    tfrg = new JFormattedTextField ("");
-			    MaskFormatter rg = new MaskFormatter("#.###.###");
-			    rg.setPlaceholderCharacter('_');
-			    JFormattedTextField tfrg = new JFormattedTextField(rg);
+			    MaskFormatter rg = null;
+			    rg = new MaskFormatter("#.###.###");
+			    tfrg = new JFormattedTextField(rg);
 			    tfrg.setBounds(50, 180, 90, 20);
 			    
 			    
 			    lbcpf = new JLabel("C.P.F. : ");
 			    lbcpf.setBounds(150, 180, 60, 20);
-			    tfcpf = new JFormattedTextField("");
-			    MaskFormatter cpf = new MaskFormatter("###.###.###-##");
-			    cpf.setPlaceholderCharacter('_');
-			    JFormattedTextField tfcpf = new JFormattedTextField(cpf);
+			    MaskFormatter cpf = null;
+			    cpf = new MaskFormatter("###.###.###-##");
+			    tfcpf = new JFormattedTextField(cpf);
 			    tfcpf.setBounds(190, 180, 120, 20);
 			    
 			    
 			    lbnasc = new JLabel("Data de Nacimento : ");
 			    lbnasc.setBounds(340, 180, 120, 20);
-			    tfnasc = new JFormattedTextField("");
-			    MaskFormatter nasc = new MaskFormatter("##/##/####");
-			    nasc.setPlaceholderCharacter('_');
-			    JFormattedTextField tfnasc = new JFormattedTextField(nasc);
+			    MaskFormatter nasc = null;
+			    nasc = new MaskFormatter("##/##/####");
+			    tfnasc = new JFormattedTextField(nasc);
 			    tfnasc.setBounds(460, 180, 120, 20);
 			    
 			    btcad = new JButton("Cadastrar");
@@ -301,5 +295,3 @@ public class Registro extends JFrame implements ActionListener{
 		
 	}
 	}
-	
-
