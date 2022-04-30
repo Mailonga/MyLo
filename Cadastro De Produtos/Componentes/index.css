@@ -7,11 +7,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.form-group{
+  margin-top: 25px;
+  margin-left: 90px;
+}
+
+.form-control{
+  margin-right: 600px;
+}
+
+.btn{
+  margin-top: 25px;
+  margin-left: 90px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-.texto-centralizado{
-  text-align: center;
 }
