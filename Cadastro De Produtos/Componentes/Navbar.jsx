@@ -29,25 +29,28 @@ function Navbar(){
 
   <form>
     <fieldset>
-      <legend>Cadastro De Produtos</legend>
-      <div className="form-group col-md-6">
-        <label for="nome" className="form-label mt-4">Nome</label>
-        <input type="text" className="form-control" id="nome" placeholder="Nome Completo"/>
-      </div>
-      <div className="form-group col-md-6">
-        <label for="sku" className="form-label mt-4">SKU</label>
+      <legend className="form-group "><strong>Cadastro De Produtos</strong></legend>
+      <div className="form-group">
+          <div className="row">
+             <div className="col-md-4">
+             <label for="nome" className="form-label mt-4">Nome</label>
+             <input type="text" className="form-control" id="nome" placeholder="Nome Completo"/>
+             </div>
+             <div className="col-md-4">
+             <label for="sku" className="form-label mt-4">SKU</label>
         <input type="text" className="form-control" id="sku"/>
+             </div>
+          </div>
       </div>
-      <div className="form-group col-md-12">
+      <div className="form-group col-md-8">
         <label for="descricao" className="form-label mt-4">Descrição</label>
         <textarea className="form-control" id="descricao" rows="5"></textarea>
       </div>
-      <div className="form-group input-group mb-3 col-md-6">
+    <div className="form-group input-group mb-3 col-md-4">
       <span className="input-group-text">R$</span>
       <input type="text" id = "preco" className="form-control" aria-label="Amount"/>
-      <span className="input-group-text">.00</span>
     </div>
-      <div className="form-group col-md-6">
+      <div className="form-group col-md-4">
         <label for="fornecedor" className="form-label mt-4">Fornecedor</label>
         <input type="text" className="form-control" id="fornecedor"/>
       </div>
