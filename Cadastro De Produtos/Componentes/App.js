@@ -3,22 +3,31 @@ import  'bootswatch/dist/lux/bootstrap.min.css';
 import './components/Navbar';
 import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-           
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component{
+
+  state = {
+   cid: ''
+  }
+
+  modName = (Event) =>{
+      let cid = Event.target.value;
+
+      this.setState({
+        cid: cid
+      })
+  } 
+    
+  
+
+  render(){
+    return(
+   
+        <input type = "text" value ={this.state.cid} onChange ={this.modName}/>
+         
+    )}
+
 }
 
-export default App;
 
+export default App;
