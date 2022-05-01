@@ -2,13 +2,14 @@ import './App.css';
 import  'bootswatch/dist/lux/bootstrap.min.css';
 import './component/Navbar';
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route, BrowserRouter } from 'react-router-dom';
+import Rotas from './Rotas';
 
 class App extends React.Component{
-
+ 
   state = {
    cid: ''
-
-   
+  
   }
 
   modName = (Event) =>{
@@ -32,18 +33,9 @@ class App extends React.Component{
 
 function App1() {
   return (
-    <div className="App1">
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+       <Rotas/>  
+    </BrowserRouter>
   );
 
   }
