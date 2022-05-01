@@ -38,7 +38,7 @@ function Navbar(){
              </div>
              <div className="col-md-4">
              <label for="sku" className="form-label mt-4">SKU</label>
-        <input type="text" className="form-control" id="sku"/>
+             <input type="text" className="form-control" id="sku"/>
              </div>
           </div>
       </div>
@@ -46,19 +46,25 @@ function Navbar(){
         <label for="descricao" className="form-label mt-4">Descrição</label>
         <textarea className="form-control" id="descricao" rows="5"></textarea>
       </div>
-    <div className="form-group input-group mb-3 col-md-4">
-      <span className="input-group-text">R$</span>
-      <input type="text" id = "preco" className="form-control" aria-label="Amount"/>
-    </div>
-      <div className="form-group col-md-4">
-        <label for="fornecedor" className="form-label mt-4">Fornecedor</label>
-        <input type="text" className="form-control" id="fornecedor"/>
+    <div className="row">
+      <div className="col-md-4">
+        <div className="form-group input-group mb-3">
+          <span className="input-group-text">R$</span>
+          <input type="text" id = "preco" className="form-control" aria-label="Amount"/>
+        </div>
       </div>
+      <div className="col-md-4">
+        <div className="form-group">
+          <label for="fornecedor" className="form-label mt-4">Fornecedor</label>
+          <input type="text" className="form-control" id="fornecedor"/>
+        </div>
+      </div>
+    </div>
       <button type="submit" className="btn btn-primary">Submit</button>
     </fieldset>
   </form>
 </body>
-    </div>
+</div>
   )
   
 }
