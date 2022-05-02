@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import CadastroProdutos from "./views/cadastroProdutos.jsx";
 import Home from './component/Pages/Home';
 import Consulta from './component/Pages/Consulta';
+import Cadastro from './component/Pages/Cadastro';
 
 
 function Rotas(){
@@ -12,8 +13,11 @@ function Rotas(){
               <Route exact path = "/Home">
                   <Home/>
               </Route>
-              <Route exact = {true} path = "/cadastroProdutos">
-                  <CadastroProdutos/>
+              <Route exact path = "/Cadastro">
+                  <Cadastro/>
+                  <Route exact path = "/cadastroProdutos">
+                     <CadastroProdutos/>
+                  </Route>
               </Route>
               <Route exact Path = "/Consulta">
                   <Consulta/>
