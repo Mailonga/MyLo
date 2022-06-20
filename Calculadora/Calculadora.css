@@ -1,0 +1,47 @@
+body{
+background-image: url('../Calculadora/Numeros.gif');
+font-family: Georgia, 'Times New Roman', Times, serif;   
+font-size: x-large;
+background-repeat: no-repeat;
+background-position: center center;
+margin-top: 800px;
+background-size: 850px;
+}
+
+h1{
+    text-align: center;
+    color: black;
+}
+
+.container{
+    background-color: rgba(196, 152, 209);
+    position: absolute;
+    border-radius: 15px;
+    padding: 15px;
+    border-color:  rgba(196, 152, 209);
+    border-style: solid;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.bt{
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+    color: azure;
+    border-radius: 25%;
+}
+
+#result{
+    background-color: aliceblue;
+    width: 230px;
+    height: 30px;
+    font-size: 25px;
+    margin: 5px;
+    border-radius: 15px;
+    text-align: right;
+    padding: 5px;
+}

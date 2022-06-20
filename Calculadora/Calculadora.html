@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../Calculadora/Calculadora.css">
+</head>
+<body>
+
+    <h1>Calculadora</h1>
+
+    <div class="container">
+        <p id="result"></p>
+        <table>
+            <tr>
+                <td><button class="bt" onclick="Restart()">C</button></td>
+                <td><button class="bt" onclick="Clear()"><</button></td>
+                <td><button class="bt" onclick="Start('/')">/</button></td>
+                <td><button class="bt" onclick="Start('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button class="bt" onclick="Start('9')">9</button></td>
+                <td><button class="bt" onclick="Start('8')">8</button></td>
+                <td><button class="bt" onclick="Start('7')">7</button></td>
+                <td><button class="bt" onclick="Start('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="bt" onclick="Start('6')">6</button></td>
+                <td><button class="bt" onclick="Start('5')">5</button></td>
+                <td><button class="bt" onclick="Start('4')">4</button></td>
+                <td><button class="bt" onclick="Start('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="bt" onclick="Start('3')">3</button></td>
+                <td><button class="bt" onclick="Start('2')">2</button></td>
+                <td><button class="bt" onclick="Start('1')">1</button></td>
+                <td rowspan="2"><button class="bt" style="height: 125px;" onclick="Calc()">=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="bt" style="width: 125px;" onclick="Start('0')">0</button></td>
+                <td><button class="bt" onclick="Start('.')">.</button></td>
+            </tr>
+        </table>
+    </div>
+
+    
+    <script src="../Calculadora/Calculadora.js"></script>
+</body>
+</html>
