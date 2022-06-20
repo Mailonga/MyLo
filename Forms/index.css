@@ -1,0 +1,104 @@
+body{
+  background-image: url("../Forms/nuvem.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.code{
+    height: 900px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    height: 500px;
+    width: 450px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+.container::before{
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -6px;
+    height: 510px;
+    width: 460px;
+    border-radius: 10px;
+    background: linear-gradient(rgb(0, 128, 107), rgb(217, 255, 0), rgb(255, 72, 0));
+    z-index: -1;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        filter: hue-rotate(0deg) brightness(100%) blur(10px);
+    }
+    100%{
+        filter: hue-rotate(360deg) brightness(100%) blur(10px); 
+    }
+}
+
+.btn{
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    color: rgb(109, 60, 150);
+    background-color: lightpink;
+    border: none;
+}
+.btn:hover{
+    background-color: rgb(163, 123, 196);
+    color: lightpink;
+    font-weight: bolder;
+}
+
+.forget{
+    color: darkslateblue;
+    margin: 25px;
+    text-decoration: none;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+}
+
+.lab{
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.icon{
+    color: darkslateblue;
+    padding: 0 8px;
+}
+
+.form input{
+    height: 30px;
+    width: 100%;
+    border: none;
+    background-color: azure;
+    cursor: text;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    color: darkslateblue;
+}
